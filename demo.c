@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
         sscanf (argv[1], "%d", &n);
 
     /* Generate random numbers */
-    srand(time (NULL));
+    srand(1);
     for(i= 0; i <n; i++)
     {
         x[i] = (double)(rand()%100)/ 100.0;
