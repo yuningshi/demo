@@ -11,7 +11,7 @@
 double max(double *x,int n)
 {
     int i;
-    double  x_max =-999.0;
+    double  x_max;
 
     for (i = 0; i<n;i++){
         if (x[i] > x_max)
@@ -34,9 +34,6 @@ int main(int argc, char *argv[])
         exit (1);}
     else
         sscanf (argv[1], "%d", &n);
-
-    /* Allocate memory for x */
-    //x = (double *)malloc (n*sizeof (double));
 
     /* Generate random numbers */
     srand(time (NULL));
