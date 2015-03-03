@@ -22,12 +22,12 @@ OBJS = $(SRCS:.c=.o)
 all:    $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJS)
-        @$(CC) $(CFLAGS) $(SFLAGS) $(INCLUDES) -o $(EXECUTABLE) $(OBJS) $(LFLAGS) $(LIBS)
+	@$(CC) $(CFLAGS) $(SFLAGS) $(INCLUDES) -o $(EXECUTABLE) $(OBJS) $(LFLAGS) $(LIBS)
 
 %.o: %.c $(HEADERS)
-        $(CC) $(CFLAGS) $(SFLAGS) $(INCLUDES) -c $<  -o $@
+	$(CC) $(CFLAGS) $(SFLAGS) $(INCLUDES) -c $<  -o $@
 
 .PHONY: clean
 
 clean:
-        $(RM) $(SRCDIR)/*.o $(EXECUTABLE)
+	$(RM) $(SRCDIR)/*.o $(EXECUTABLE)
