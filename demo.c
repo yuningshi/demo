@@ -11,7 +11,7 @@
 double max(double *x,int n)
 {
     int i;
-    double  x_max;
+    double  x_max = -999.0;
 
     for (i = 0; i<n;i++){
         if (x[i] > x_max)
