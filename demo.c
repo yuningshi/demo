@@ -35,6 +35,8 @@ int main(int argc, char *argv[])
     else
         sscanf (argv[1], "%d", &n);
 
+    x = (double *) malloc (n * sizeof (double));
+
     /* Generate random numbers */
     srand(1);
     for(i= 0; i <n; i++)
